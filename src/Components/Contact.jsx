@@ -2,85 +2,107 @@ import React, { useState } from 'react';
 import './Contact.css';
 
 function Contact() {
-  const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: '',
+  const [form, setForm] = useState({
+    name: '',
     phone: '',
-    propertyType: 'Commercial Building',
-    contractStatus: 'Yes',
-    identity: 'International Real Estate Investor',
-    message: '',
+    email: '',
+    subject: '',
+    message: ''
   });
 
+  const [errors, setErrors] = useState({});
+
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
+    setForm({
+      ...form,
+      [e.target.name]: e.target.value
     });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log(formData);
+    const newErrors = validateForm();
+    if (Object.keys(newErrors).length === 0) {
+      console.log('Form submitted:', form);
+      // Add your form submission logic here
+    } else {
+      setErrors(newErrors);
+    }
+  };
+
+  const validateForm = () => {
+    const newErrors = {};
+    if (!form.name) newErrors.name = 'This field is required';
+    if (!form.phone) newErrors.phone = 'This field is required';
+    if (!form.email) newErrors.email = 'This field is required';
+    if (!form.subject) newErrors.subject = 'This field is required';
+    if (!form.message) newErrors.message = 'This field is required';
+    return newErrors;
   };
 
   return (
-    <div className="contact-container">
-      <h1>Contact</h1>
-      <p>Atlas 1031 Exchange has proudly served clients seeking I.R.C § 1031 counsel as Qualified Intermediaries with precision and excellence for over 18 years. We often personally meet with clients, and speak at educational events on “Tax Deferred Exchanges.”</p>
-      <p>Email: info@atlas1031.com</p>
-      <p>Phone: 1-800-227-1031</p>
-      <p>Fax: 1-850-201-6911</p>
-      <p>Naples Office: 1908 Timarron Way, Naples, FL 34109</p>
-
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>First Name</label>
-          <input type="text" name="firstName" value={formData.firstName} onChange={handleChange} required />
-        </div>
-        <div>
-          <label>Last Name</label>
-          <input type="text" name="lastName" value={formData.lastName} onChange={handleChange} required />
-        </div>
-        <div>
-          <label>Email Address</label>
-          <input type="email" name="email" value={formData.email} onChange={handleChange} required />
-        </div>
-        <div>
-          <label>Phone Number</label>
-          <input type="tel" name="phone" value={formData.phone} onChange={handleChange} required />
-        </div>
-        <div>
-          <label>What is the property being sold?</label>
-          <select name="propertyType" value={formData.propertyType} onChange={handleChange}>
-            <option value="Commercial Building">Commercial Building</option>
-            <option value="Residential Property">Residential Property</option>
-            <option value="Land">Land</option>
-          </select>
-        </div>
-        <div>
-          <label>In Contract?</label>
-          <select name="contractStatus" value={formData.contractStatus} onChange={handleChange}>
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
-          </select>
-        </div>
-        <div>
-          <label>How do you identify yourself?</label>
-          <select name="identity" value={formData.identity} onChange={handleChange}>
-            <option value="International Real Estate Investor">International Real Estate Investor</option>
-            <option value="Domestic Real Estate Investor">Domestic Real Estate Investor</option>
-            <option value="Real Estate Agent">Real Estate Agent</option>
-          </select>
-        </div>
-        <div>
-          <label>How may we help you?</label>
-          <textarea name="message" value={formData.message} onChange={handleChange}></textarea>
-        </div>
-        <button type="submit">Submit</button>
-      </form>
+    <div className="App">
+      <div className="contact-form">
+        <h2>Get in Touch</h2>
+        <form onSubmit={handleSubmit}>
+          <div>
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              value={form.name}
+              onChange={handleChange}
+            />
+            {errors.name && <span className="error">{errors.name}</span>}
+          </div>
+          <div>
+            <input
+              type="text"
+              name="phone"
+              placeholder="Phone"
+              value={form.phone}
+              onChange={handleChange}
+            />
+            {errors.phone && <span className="error">{errors.phone}</span>}
+          </div>
+          <div>
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              value={form.email}
+              onChange={handleChange}
+            />
+            {errors.email && <span className="error">{errors.email}</span>}
+          </div>
+          <div>
+            <input
+              type="text"
+              name="subject"
+              placeholder="Subject"
+              value={form.subject}
+              onChange={handleChange}
+            />
+            {errors.subject && <span className="error">{errors.subject}</span>}
+          </div>
+          <div>
+            <textarea
+              name="message"
+              placeholder="Message"
+              value={form.message}
+              onChange={handleChange}
+            />
+            {errors.message && <span className="error">{errors.message}</span>}
+          </div>
+          <button type="submit">Submit Now</button>
+        </form>
+      </div>
+      <div className="contact-info">
+        <h2>Contact Info</h2>
+        <p><i className="fa fa-map-marker"></i> 123, Any Street, 2nd Floor, Delhi, India 110022</p>
+        <p><i className="fa fa-phone"></i> +91 1234 123 123</p>
+        <p><i className="fa fa-envelope"></i> Support@example.com</p>
+      </div>
     </div>
   );
 }
