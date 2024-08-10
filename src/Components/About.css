@@ -1,0 +1,151 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.about-us {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 70px 0;
+  background-color: #f4f4f9;
+}
+
+.about-us-content {
+  flex: 2;
+  padding: 90px;
+}
+
+.about-us-content h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.about-us-content p {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+.about-us-image {
+  flex: 1;
+  text-align: center;
+}
+
+.about-us-image img {
+  max-width: 90%;
+  //height: auto;
+  //border-radius: 5px;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 50px 20px;
+  color: white;
+}
+
+.App-header h1 {
+  font-size: 2.5em;
+}
+
+.App-header p {
+  font-size: 1.2em;
+}
+
+.App-story {
+  padding: 50px 20px;
+  background-color: #e8e8e8;
+}
+
+.App-story h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.App-story p {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+.App-plants {
+  padding: 50px 20px;
+}
+
+.App-plants h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.plant-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.plant-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  width: 200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.plant-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.plant-card h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.plant-card p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.App-numbers {
+  padding: 50px 20px;
+  background-color: #f4f4f9;
+}
+
+.App-numbers h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.numbers {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.number-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  width: 200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.number-card h3 {
+  font-size: 2.5em;
+  margin: 10px 0;
+}
+
+.number-card p {
+  font-size: 1em;
+  line-height: 1.5;
+}
