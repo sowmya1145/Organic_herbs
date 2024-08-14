@@ -20,39 +20,6 @@ export default function Home() {
     <div>
        <section class="home">
         <div class="home-box">
-          { /* <nav>
-                <div class="logo bars">
-                    <div class="bar">
-                        <i class="fa fa-bars"></i>
-                    </div>
-                    <div className="App">
-
-      <p style={{ color:'white' }}>EliteEvents</p>
-    </div>
-   
-                    
-                </div>
-                
-                <div class="menu">
-                    <div class="close">
-                        <i class="fa fa-close"></i>
-                    </div>
-                    <ul>
-                    <li><a href='/'>Home</a></li>
-                    <li><a href='/about'>About</a></li>
-                    <li><a href='/product'>products</a></li>
-                    <li><a href='/about'>services</a></li>
-                  
-                                 
-                    </ul>
-                </div>
-                <div class="signup-login">
-               
-                <a href='/Login'>login</a>
-                </div>
-            </nav>
-            */}
-
             <div style={{  justifyContent: 'center',
             display:'flex',
                 alignItems: 'center',
@@ -61,7 +28,7 @@ export default function Home() {
                  height: '90vh',
                 color:'white' }}>
                
-           <h1 style={{ fontSize:'45px' }}>Plants are all chemists, tirelessly assembling<br/> the molecules of the worlds <br/>-Gray Snyder</h1>
+           <h1 style={{ fontSize:'45px', color:'white' }}>Plants are all chemists, tirelessly assembling<br/> the molecules of the worlds <br/>-Gray Snyder</h1>
      
                 </div>
         </div>

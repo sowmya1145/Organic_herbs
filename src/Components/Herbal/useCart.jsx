@@ -41,11 +41,16 @@ export const useCart = () => {
     setCartItems(cartItems.filter(cartItem => cartItem.name !== item.name));
   };
 
+  const handleClearCart = () => {
+    setCartItems([]); // Clear all items from the cart
+  };
+
   return {
     cartItems,
     handleAddToCart,
     handleIncreaseQuantity,
     handleDecreaseQuantity,
     handleRemoveItem,
+    handleClearCart,
   };
 };

@@ -37,8 +37,8 @@ const Greens = ({ handleAddToCart }) => {
               <h3>{item.name}</h3>
               <p><b>Uses: </b>{item.uses}</p>
               <h4>₹ {item.price} per gm</h4>
-              <div className="container">
-                <button className="button button1" onClick={() => handleAddToCart(item)}>Add to Cart</button>
+              <div className="container3">
+                <button className="button3 button13" onClick={() => handleAddToCart(item)}>Add to Cart</button>
               </div>
             </div>
           </div>

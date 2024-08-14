@@ -1,0 +1,127 @@
+/* Feedback.css */
+
+.feedback-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  //background-color: #f9f9f9;
+  border-radius: 10px;
+  //box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.feedback-section h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+  font-family: "Arial", sans-serif;
+}
+
+.feedback-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.client-image {
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.feedback-content {
+  padding: 20px;
+  font-size: 1.1rem;
+  color: #555;
+  font-family: "Arial", sans-serif;
+}
+
+.feedback-content h3 {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.feedback-content p {
+  font-style: italic;
+  font-size: 1rem;
+  color: #666;
+  margin: 15px 0;
+}
+
+.feedback-content .star-ratings {
+  margin-bottom: 15px;
+}
+
+/* Carousel controls and arrows */
+.carousel .control-dots .dot {
+  background-color: #888;
+}
+
+.carousel .control-dots .dot.selected,
+.carousel .control-dots .dot:hover {
+  background-color: #333;
+}
+
+.carousel .slide {
+  background: none;
+}
+
+.carousel .control-arrow {
+  background: none;
+  border: none;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.7;
+}
+
+.carousel .control-arrow:hover {
+  opacity: 1;
+}
+
+.carousel .control-prev.control-arrow:before {
+  border-right: 8px solid #333;
+}
+
+.carousel .control-next.control-arrow:before {
+  border-left: 8px solid #333;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

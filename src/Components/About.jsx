@@ -5,6 +5,10 @@ import im2 from '../Assets/gif/basil.gif';
 import im3 from '../Assets/gif/cha.gif';
 import im4 from '../Assets/gif/Echinacea.gif';
 import im5 from '../Assets/gif/Lavender.gif';
+import im6 from '../Assets/gif/Green_Tea.jpeg';
+import im7 from '../Assets/gif/Hydrastis_canadensis.jpeg';
+
+
 import './About.css'; // Assuming you'll style this separately
 import Footer from './Footer';
 
@@ -28,6 +32,8 @@ function About() {
     { name: 'Chamomile', benefits: 'Promotes sleep, reduces anxiety', image: im3 },
     { name: 'Echinacea', benefits: 'Boosts the immune system, reduces inflammation', image: im4 },
     { name: 'Lavender', benefits: 'Relieves stress, promotes sleep', image: im5 },
+    { name: 'Camellia sinensis', benefits: 'Improves Longevity, Lowers Cholesterol.', image: im6 },
+    { name: 'Goldenseal', benefits: 'Treat ulcers, wounds, skin, mouth and eye infections', image: im7 },
   ];
 
   return (
@@ -49,7 +55,7 @@ function About() {
 
       <div className="App">
         <header className="App-header">
-          <h1>Our Mission: Helping Millions Discover Herbal Plants</h1>
+          <h1 style={{ color:'white' }}>Our Mission: Helping Millions Discover Herbal Plants</h1>
           <p>We believe in the power of natural remedies and the importance of growing better together.</p>
         </header>
         <section className="App-story">
@@ -76,7 +82,7 @@ function About() {
               <p>Employees</p>
             </div>
             <div className="number-card">
-              <h3>205,000+</h3>
+              <h3>2,05,000+</h3>
               <p>Customers</p>
             </div>
           </div>

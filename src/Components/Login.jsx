@@ -62,7 +62,7 @@ function Login() {
           <button type="submit" className="login-button">Login</button>
         </form>
         <p className="register-link">Don't have an account? <Link to="/Register">Register here</Link></p>
-       { /*<p className="forgot-password"><Link to="/forgot-password">Forgot password?</Link></p>*/}
+
       </div>
     </div>
     </div>

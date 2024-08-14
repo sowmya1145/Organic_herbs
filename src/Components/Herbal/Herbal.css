@@ -25,7 +25,10 @@ body {
   width: 300px;
   margin: 10px;
   pointer: ;
+  transition: transform 0.2s;
 }
+
+
 
 .gallery-item img {
   width: 100%;
@@ -115,7 +118,7 @@ body {
 
 /* Hover effects */
 .buttonn2:hover {
-  background-color: #0056b3;
+  background-color: black;
   color: #fff;
 }
 

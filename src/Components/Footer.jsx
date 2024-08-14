@@ -6,7 +6,7 @@ import whatsapp from '../Assets/Footer/icons8-whatsapp-48.png';
 import youtube from '../Assets/Footer/icons8-youtube-48.png';
 import './Footer.css';
 
-
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
 
@@ -30,7 +30,7 @@ export default function Footer() {
           <li><a href="#">Why choose us</a></li>
           <li><a href="#">Contact</a></li>
           <li><a href="#">Blogs</a></li>
-          <li><a href="#">Client's Feedback</a></li>
+          <li><Link to='/Feedback'>Client's Feedback</Link></li>
         </ul>
       </div>
       <div className="footer-section">

@@ -1,5 +1,78 @@
-/* src/Cart.css */
-.cart {
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.cart-table th,
+.cart-table td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-table th {
+  background-color: #f2f2f2;
+}
+
+.cart-item-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantity-controls button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  background-color: #ccc;
+  border: none;
+  cursor: pointer;
+}
+
+.quantity-controls span {
+  margin: 0 10px;
+}
+
+.remove-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #d9534f;
+  font-size: 30px;
+}
+
+.cart-total {
+  margin-top: 40px;
+  margin-right: 50px;
+  text-align: right;
+}
+
+.button4 {
+  background-color: #4CAF50;
+  color:white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.button4:hover{
+  background-color: black;
+}
+
+.button5 {
+  background-color: #4caf50;
+}
+
+ {
+  /*.cart {
   padding: 20px;
   background-color: #fff;
   border: 1px solid #ddd;
@@ -89,7 +162,7 @@
   margin-top: 10px;
 }
 
-/* Add responsive design for smaller screens */
+
 @media (max-width: 768px) {
   .cart {
     padding: 10px;
@@ -115,6 +188,5 @@
   }
 }
 
-.order{
-
+*/
 }
